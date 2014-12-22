@@ -260,5 +260,7 @@ void keyPressed() {
 }
 
 void mousePressed(){
+  if (status == GAME_PLAYING){
   ball.start = true;
+  }
 }
