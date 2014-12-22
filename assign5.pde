@@ -41,7 +41,7 @@ void draw() {
   switch(status) {
 
   case GAME_START:
-    printText("Press ENTER to Start", height/2, 20);
+    printText("Press ENTER to Start", height/2, 40);
     break;
 
   case GAME_PLAYING:
@@ -115,7 +115,7 @@ void brickMaker(int num, int numInRow) {
 
 void drawLife() {
   fill(230, 74, 96);
-  textSize(23);
+  textSize(25);
   text("LIFE:", 36, 455);
   for (int i=0; i<life; i++){
     int x = i * 25;
