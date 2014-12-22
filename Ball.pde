@@ -59,7 +59,7 @@ class Ball{
   Ball(int posX, int posY, int l){
     this.x = posX;
     this.y = posY;
-    xSpeed = random(-3,3);
+    xSpeed = random(1,5);
     ySpeed = -3;
     size = 10;
   }
