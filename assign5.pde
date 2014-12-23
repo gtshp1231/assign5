@@ -41,7 +41,7 @@ void draw() {
   switch(status) {
 
   case GAME_START:
-    printText("Press ENTER to Start", height/2, 40);
+    printText("Press ENTER to Start", height/2, 30);
     break;
 
   case GAME_PLAYING:
@@ -65,11 +65,11 @@ void draw() {
     break;
 
   case GAME_WIN:
-    printText("WINNER", height/2, 40);
+    printText("WINNER", height/2, 45);
     break;
 
   case GAME_LOSE:
-    printText("You are dead!!", height/2, 40);
+    printText("You are dead!!", height/2, 45);
     break;
   }
 }
@@ -115,7 +115,7 @@ void brickMaker(int num, int numInRow) {
 
 void drawLife() {
   fill(230, 74, 96);
-  textSize(25);
+  textSize(22);
   text("LIFE:", 36, 455);
   for (int i=0; i<life; i++){
     int x = i * 25;
@@ -260,7 +260,7 @@ void keyPressed() {
 }
 
 void mousePressed(){
-  if (status == GAME_PLAYING){
+  if (mouseButton == RIGHT && status == GAME_PLAYING){
   ball.start = true;
   }
 }
